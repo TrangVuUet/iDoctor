@@ -1,0 +1,135 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/blue1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BMI">
+
+    <!-- title -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="BMI Caculator"
+        android:layout_height="wrap_content"
+        android:textColor="#ffc00915" />
+
+
+    <!-- user data -->
+    <TextView
+        android:id="@+id/weight_tv"
+        android:layout_width="match_parent"
+        android:text="Weight : "
+        android:textSize="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/tv_title"
+        android:textColor="#ffc52319" />
+
+    <EditText
+        android:id="@+id/weight_edit"
+        android:layout_below="@+id/weight_tv"
+        android:textSize="30dp"
+        android:hint="kg"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/height_tv"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/weight_edit"
+        android:textSize="30dp"
+        android:text="Height : "
+        android:layout_height="wrap_content"
+        android:textColor="#ffc51923" />
+
+    <EditText
+        android:id="@+id/height_edit"
+        android:layout_below="@+id/height_tv"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:hint="cm" />
+
+    <TextView
+        android:id="@+id/age_tv"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/height_edit"
+        android:textSize="30dp"
+        android:text="Age : "
+        android:layout_height="wrap_content"
+        android:textColor="#ffc51923" />
+
+    <EditText
+        android:id="@+id/age_edit"
+        android:layout_below="@+id/age_tv"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:password="false" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/age_edit"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+      <!--  <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"> -->
+
+        <!-- </RadioGroup> -->
+
+
+    </LinearLayout>
+
+    <!-- result -->
+    <Button
+        android:id="@+id/result_btn"
+        android:layout_width="match_parent"
+        android:text="Result"
+        android:textSize="30dp"
+        android:layout_above="@+id/result_tv"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:textColorHighlight="#ffffd6a9"
+        android:textColor="#ffc51923"
+        />
+
+    <TextView
+        android:id="@+id/result_tv"
+        android:layout_width="match_parent"
+        android:textSize="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:text="Female"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/age_edit"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="67dp"
+        android:id="@+id/female_btn"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:text="Male"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:checked="false"
+        android:layout_alignBottom="@+id/radioButton"
+        android:layout_below="@+id/age_edit"
+        android:id="@+id/male_btn" />
+
+
+</RelativeLayout>
