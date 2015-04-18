@@ -1,7 +1,7 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/blue1"
+    android:background="@drawable/image8"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BMI">
@@ -94,13 +94,13 @@
         android:id="@+id/result_btn"
         android:layout_width="match_parent"
         android:text="Result"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:layout_above="@+id/result_tv"
         android:layout_marginBottom="10dp"
         android:layout_height="wrap_content"
         android:textColorHighlight="#ffffd6a9"
         android:textColor="#ffc51923"
-        />
+        android:background="#fff3c1c9" />
 
     <TextView
         android:id="@+id/result_tv"
@@ -108,7 +108,8 @@
         android:textSize="40dp"
         android:layout_alignParentBottom="true"
         android:layout_height="wrap_content"
-        android:gravity="center" />
+        android:gravity="center"
+        android:backgroundTint="#ffd5c2ff" />
 
     <RadioButton
         android:layout_width="wrap_content"
